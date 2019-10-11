@@ -120,6 +120,11 @@ main {
       justify-content: space-around;
 }
 
+.chatbots .upper {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .chatbots .text-center {
   margin-top: 30px;
 }
