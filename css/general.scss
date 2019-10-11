@@ -19,6 +19,12 @@ a {
     color: #0081ff;
 }
 
+.text-blue {
+    background: #0081ff;
+    padding: 3px;
+    color: #fff;
+}
+
 .color-red {
     color: #ff454f;
 }
@@ -35,6 +41,7 @@ a {
 
     @include sm-block {
         font-size: 24px;
+        line-height: 24px;
     }
 }
 
