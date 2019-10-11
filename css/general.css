@@ -80,6 +80,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .color-blue {
   color: #0081ff;
 }
