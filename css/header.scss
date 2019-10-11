@@ -116,7 +116,7 @@ nav {
         .btn-lines {
             width: 80%;
             height: 3px;
-            background: #fff;
+            background: #000;
             border-radius: 2rem;
             transition: all .3s ease-in-out;
         }
@@ -137,6 +137,7 @@ nav {
     // Media queries
 
     @include sm-block {
+        padding: 15px 40px;    
         .menu {
             position: relative;
             &-list {
