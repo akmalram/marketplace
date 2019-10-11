@@ -146,7 +146,7 @@ main {
 
 @media screen and (max-width: 576px) {
   .chatbot {
-    width: calc(62.5% - 30px);
+    width: calc(100% - 30px);
   }
 }
 
