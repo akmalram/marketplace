@@ -12,7 +12,9 @@ nav {
     top: 0;
     z-index: 1111;
     
-
+    .logo {
+        line-height: 25px;
+    }
     .menu {
 
         &-list {
@@ -34,7 +36,7 @@ nav {
             font-size: 18px;
             font-weight: 600;
             padding: 20px 0;
-            color: #fff;
+            color: #8799a3;
             transition: color .3s ease-in-out;
 
 
@@ -140,6 +142,7 @@ nav {
         padding: 15px 40px;    
         .menu {
             position: relative;
+            
             &-list {
                 display: block;
                 position: absolute;
@@ -154,6 +157,7 @@ nav {
                 transform: translateY(-40px);
                 opacity: 0;
                 visibility: hidden;
+                box-shadow: 0 0 100px rgba(0,0,0,.3);
             }
 
             &-item:hover .submenu-list {
