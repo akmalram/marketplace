@@ -1,0 +1,115 @@
+@import './smart-grid.scss';
+
+main {
+    position: relative;
+}
+
+.top-layers {
+    position: absolute;
+    width: 75%;
+    height: 50px;
+    background: #fff;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 50px;
+        background: rgba(255, 255, 255, .4);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &::before {
+        width: 93%;
+        top: -10px;
+    }
+
+    &::after {
+        width: 83%;
+        top: -20px;
+    }
+}
+
+.advantages {
+    padding-bottom: 100px;
+    .row {
+        justify-content: space-around;
+    }
+
+    &-item {
+        @include col();
+        @include size(7);
+        @include size-sm(11);
+        @include size-xs(24);
+        margin: 50px 0;
+        position: relative;
+    }
+
+    &-item:hover &-title {
+        color: #8799a3;
+    }
+
+    &-item:hover &-icon {
+        color: #8799a3;
+        animation: advantages-icon-animation .5s ease-in-out 1 alternate;
+    }
+
+    &-icon {
+        height: 50px;
+        position: absolute;
+        left: 10px;
+        top: 0;
+    }
+
+    &-text {
+        box-sizing: border-box;
+        padding-left: 80px;
+    }
+
+    &-title {
+        color: #252525;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        line-height: 1.4em;
+        margin-bottom: 20px;
+        transition: color .2s;
+    }
+
+    &-desc {
+        font: 18px 'Comfortaa';
+        color: #636363;
+        line-height: 1.5;
+    }
+
+    // Media queries
+
+    @include sm-block {
+        
+    }
+}
+
+@keyframes advantages-icon-animation{
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    20% {
+        transform: rotate(-15deg) scale(1.1);
+    }
+    40% {
+        transform: rotate(15deg) scale(1.1);
+    }
+    60% {
+        transform: rotate(-15deg) scale(1.1);
+    }
+    80% {
+        transform: rotate(15deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
