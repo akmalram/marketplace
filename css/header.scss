@@ -5,11 +5,13 @@ nav {
     padding: 30px 40px;
     display: flex;
     justify-content: space-between;
-    // background-color: #fff;
+    background-color: #fff;
     box-sizing: border-box;
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 1111;
+    
 
     .menu {
 
