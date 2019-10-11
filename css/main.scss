@@ -43,8 +43,11 @@ main {
     &-item {
         @include col();
         @include size(7);
+        @include size-md(9);
         @include size-sm(11);
-        @include size-xs(24);
+        @include size-xs(22);
+        max-width: 325px;
+
         margin: 50px 0;
         position: relative;
     }
@@ -84,12 +87,6 @@ main {
         font: 18px 'Comfortaa';
         color: #636363;
         line-height: 1.5;
-    }
-
-    // Media queries
-
-    @include sm-block {
-        
     }
 }
 

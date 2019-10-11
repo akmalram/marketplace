@@ -32,6 +32,10 @@ a {
     line-height: 46px;
     text-transform: none;
     text-align: center;
+
+    @include sm-block {
+        font-size: 24px;
+    }
 }
 
 .row {
