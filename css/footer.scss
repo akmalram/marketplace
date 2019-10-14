@@ -1,0 +1,107 @@
+@import './smart-grid.scss';
+
+footer {
+    background: #191919;
+    padding: 60px 40px 40px;
+}
+
+.footer-top {
+    .row {
+        justify-content: space-around;
+    }
+
+    .socials, .site-map, .subscribe {
+        @include col();
+        @include size(8);
+        @include size-sm(12);
+        @include size-xs(23);
+
+        margin-bottom: 30px;
+    }
+
+    .footer-top-heading {
+        font-size: 25px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .socials {
+        .logo {
+            font-size: 44px;
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        p {
+            color: #636363;
+            font-size: 18px;
+            margin: 25px 0;
+        }
+
+        &-link {
+            color: #8799a3;
+            font-size: 25px;
+            margin-right: 15px;
+            transition: text-shadow .3s;
+
+            &:hover {
+                text-shadow: 0 0 15px #8799a3;
+            }
+        }
+    }
+
+    .site-map {
+
+        .item {
+            margin: 18px 0;
+        }
+
+        .link {
+            font-size: 18px;
+            color: #8799a3;
+            transition: color .2s;
+
+            &:hover {
+                color: #0081ff;
+            }
+
+            @include sm(font-size, 16px);
+        }
+    }
+
+    .subscribe {
+        p {
+            font-size: 18px;
+            color: #636363;
+            margin: 25px 0;
+        }
+
+        &-input {
+            max-width: 100%;
+            width: 300px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #8799a3;
+            border: none;
+            background-color: #353535;
+            font-family: Comfortaa;
+            transition: all .3s;
+            margin: 0;
+            padding: 13px 28px;
+            width: 100%;
+            font-weight: 700;
+            box-sizing: border-box;
+            border-radius: 25px;
+
+
+            &:focus {
+                background-color: #fff;
+                outline: none;
+            }
+            &:hover {
+                background-color: #fff;
+            }
+        }
+    }
+}
